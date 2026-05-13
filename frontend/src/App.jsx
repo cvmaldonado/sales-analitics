@@ -3,15 +3,15 @@ import { Toaster } from 'react-hot-toast'
 import { LayoutDashboard, Package, ShoppingCart } from 'lucide-react'
 import Dashboard    from './pages/Dashboard'
 import Productos    from './pages/Productos'    
-//import Pedidos      from './pages/Pedidos'
-//import Devoluciones from './pages/Devoluciones'
+import Pedidos      from './pages/Pedidos'
+import Devoluciones from './pages/Devoluciones'
 import './App.css'
 
 const navItems = [
   { to: '/',              icon: LayoutDashboard, label: 'Dashboard'    },
   { to: '/productos',     icon: Package,         label: 'Productos'    },
   { to: '/pedidos',       icon: ShoppingCart,    label: 'Pedidos'      },
-  //{ to: '/devoluciones',  icon: RotateCcw,       label: 'Devoluciones' },
+  { to: '/devoluciones',  icon: RotateCcw,       label: 'Devoluciones' },
 ]
 
 export default function App() {
@@ -42,8 +42,8 @@ export default function App() {
           <Routes>
             <Route path="/"             element={<Dashboard />}    />
             <Route path="/productos"    element={<Productos />}    />
-            {/* <Route path="/pedidos"      element={<Pedidos />}      /> */}
-            {/* <Route path="/devoluciones" element={<Devoluciones />} /> */}
+            <Route path="/pedidos"      element={<Pedidos />}      />
+            <Route path="/devoluciones" element={<Devoluciones />} />
           </Routes>
         </main>
       </div>
