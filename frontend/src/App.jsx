@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
-import { LayoutDashboard, Package, ShoppingCart } from 'lucide-react'
+import { LayoutDashboard, Package, ShoppingCart, RotateCcw } from 'lucide-react'
 import Dashboard    from './pages/Dashboard'
 import Productos    from './pages/Productos'    
 import Pedidos      from './pages/Pedidos'
